@@ -34,6 +34,12 @@
 			    ];
 			    wp_nav_menu( $args );
 			?>
+            <div class="header-cart">
+                <ul>
+                    <li class="header-cart-link"><a href="<?php echo wc_get_cart_url(); ?>"></a></li>
+                    <li class="header-cart-body" id="mini-cart-body"><?php woocommerce_mini_cart(); ?></li>
+                </ul>
+            </div>
         </header>
     </div>
 

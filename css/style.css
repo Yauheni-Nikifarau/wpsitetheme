@@ -2706,3 +2706,62 @@ ul.menu li:first-child {
     display: flex;
     justify-content: space-around;
 }
+
+.header-cart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    background-image: url('../image/cart_icon.png');
+    background-size: contain;
+}
+
+.header-cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-cart-link {
+    padding-left: 0;
+}
+
+.header-cart-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header-cart-body {
+    display: none;
+    padding: 20px;
+    border-radius: 10px 0 10px 10px;
+    position: absolute;
+    width: 500px;
+    background-color: #fff;
+    left: -450px;
+    z-index: 99;
+}
+
+.header-cart:hover .header-cart-body {
+    display: block;
+}
+
+.remove_from_cart_button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url('../image/remove_icon.png');
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.woocommerce-mini-cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.woocommerce-mini-cart-item span {
+    margin-left: auto;
+}

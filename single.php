@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+SINGLE<?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<?php
 	$categoriesArr = get_the_category();

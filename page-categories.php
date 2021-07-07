@@ -1,7 +1,7 @@
-<?php
-$sportPosts    = new WP_Query( [ 'category_name' => 'sport', 'posts_per_page' => 3 ] );
-$politicsPosts = new WP_Query( [ 'category_name' => 'politics', 'posts_per_page' => 3 ] );
-$financePosts  = new WP_Query( [ 'category_name' => 'finance', 'posts_per_page' => 3 ] );
+PAGE-CATEGORIES<?php
+$sportPosts    = get_posts ( [ 'category_name' => 'sport', 'numberposts' => 3 ] );
+$politicsPosts = get_posts ( [ 'category_name' => 'politics', 'numberposts' => 3 ] );
+$financePosts  = get_posts ( [ 'category_name' => 'finance', 'numberposts' => 3 ] );
 ?>
 <?php get_header(); ?>
 <div class="container">

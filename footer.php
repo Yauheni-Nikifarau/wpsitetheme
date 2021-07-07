@@ -8,9 +8,9 @@ $args = [
 	'container_id' => 'footer_nav',
 	'items_wrap' => '<ul>%3$s</ul>'
 ];
-$sportPostsFooter    = new WP_Query( [ 'category_name' => 'sport', 'posts_per_page' => 5 ] );
-$politicsPostsFooter = new WP_Query( [ 'category_name' => 'politics', 'posts_per_page' => 5 ] );
-$financePostsFooter  = new WP_Query( [ 'category_name' => 'finance', 'posts_per_page' => 5 ] );
+$sportPostsFooter    = get_posts( [ 'category_name' => 'sport', 'numberposts' => 5 ] );
+$politicsPostsFooter = get_posts( [ 'category_name' => 'politics', 'numberposts' => 5 ] );
+$financePostsFooter  = get_posts( [ 'category_name' => 'finance', 'numberposts' => 5 ] );
 ?>
 <!-- Footer -->
 <div id="footer-wrapper">

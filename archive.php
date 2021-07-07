@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+ARCHIVES<?php get_header(); ?>
 <?php $arhive_title = preg_replace( '~^[^:]+: ~', '', get_the_archive_title() ); ?>
 <div class="container">
     <h1 class="category-title"><?php echo $arhive_title; ?></h1>
@@ -20,5 +20,5 @@
                 </div>
 			<?php endwhile; endif; ?>
     </div>
-    <?php the_posts_pagination(); ?>
+	<?php the_posts_pagination(); ?>
 <?php get_footer(); ?>
