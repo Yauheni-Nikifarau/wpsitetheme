@@ -2765,3 +2765,54 @@ ul.menu li:first-child {
 .woocommerce-mini-cart-item span {
     margin-left: auto;
 }
+
+.single-product-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.single-product-image span {
+    position: absolute;
+    top: 30px;
+    transform: rotate(-10deg);
+    font-size: 50px;
+    font-weight: bold;
+    color: #990000;
+}
+
+.summary.entry-summary {
+    text-align: center;
+}
+
+.product_title.entry-title {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.summary.entry-summary .price {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.summary.entry-summary .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary.entry-summary .cart button {
+    margin-left: 20px;
+}
+
+.woocommerce-product-gallery__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.product-thumbnails, .woocommerce-variation-add-to-cart {
+    display: flex;
+    justify-content: center;
+}

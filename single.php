@@ -3,7 +3,8 @@ SINGLE<?php get_header(); ?>
 	<?php
 	$categoriesArr = get_the_category();
 	$categoryTitle = $categoriesArr[0]->name;
-	$categoryLatestPosts = new WP_Query( [ 'category_name' => $categoryTitle, 'posts_per_page' => 5 ] );
+	$categoryLatestPosts = get_posts( [ 'category_name' => $categoryTitle, 'numberposts' => 5 ] );
+	$categories = '';
 	foreach ( $categoriesArr as $category ) {
 		$categories .= '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
 	}
